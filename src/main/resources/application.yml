@@ -1,0 +1,14 @@
+server:
+  port: 443
+spring: 
+  application:
+    name: configserver
+  profiles:
+    active: vault
+  cloud:
+    config:
+      server:
+        vault:
+          port: 443
+          host: vault.jx-vault.sanferbarber.cl
+          kvVersion: 1 

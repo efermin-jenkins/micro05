@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo
+  cloud:
+    vault:
+      host: vault.jx-vault.sanferbarber.cl
+      token: s.WPljIb5bWsEP0q5SMwXZQpaK
+      scheme: https
+      authentication: TOKEN
+      port: 443
+      kvVersion: 1
