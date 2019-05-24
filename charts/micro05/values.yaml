@@ -12,6 +12,8 @@ env:
 
 # enable this flag to use knative serve to deploy the app
 knativeDeploy: false
+podAnnotations:
+  sidecar.jaegertracing.io/inject: "true"
 
 service:
   name: micro05
