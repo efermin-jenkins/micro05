@@ -20,7 +20,6 @@ service:
   externalPort: 80
   internalPort: 8080
   annotations:
-    fabric8.io/expose: "false"
     service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
 resources:
   limits:
