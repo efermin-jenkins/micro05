@@ -6,10 +6,6 @@ metadata:
   name: {{ template "fullname" . }}
   annotations:
     "sidecar.jaegertracing.io/inject": "true"
-    "appmesh.k8s.aws/mesh": enrique-test
-    "appmesh.k8s.aws/ports": 80
-    "appmesh.k8s.aws/sidecarInjectorWebhook": enable
-    "appmesh.k8s.aws/virtualNode": micro-jx-staging
   labels:
     draft: {{ default "draft-app" .Values.draft }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
